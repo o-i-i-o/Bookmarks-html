@@ -27,7 +27,7 @@ Cor Koomen and other TC/RS Chromies in refining this tool.
 -->
 <html lang="en">
 <head>
-<title>Chrome Bookmarks Recovery Tool</title>
+<title>基于chromium的浏览器书签转换工具</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1.0">
 <meta name="description" content="Tool to recover your lost Chrome bookmarks">
@@ -421,7 +421,7 @@ Bookmark.prototype.newLink = function() {
 		if ('disabled' in this.dataset) {
 			return false;
 		}
-		this.textContent = '已下载';
+		this.textContent = '已失效';
 		this.dataset.disabled = true;
 		setTimeout(function() {
 			window.URL.revokeObjectURL(this.href);
