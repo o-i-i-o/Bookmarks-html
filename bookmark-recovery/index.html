@@ -261,17 +261,17 @@ footer a {
 		<a href="#google" id="google-tab" role="tab" aria-controls="google-soln">Google Server</a>
 	</div>
 	<div class="soln" id="windows-soln" role="tabpanel" aria-labelledby="windows-tab" aria-hidden="true" tabindex="0">
-		<p>Here is how to recover your lost bookmarks (Windows):</p>
+		<p>如何恢复你的浏览器书签 (Windows):</p>
 		<ol>
-			<li>Copy <code>C:\Users\%username%\AppData\Local\Google\Chrome\User Data</code> into File Explorer.</li>
+			<li>复制 <code>C:\Users\%username%\AppData\Local\Google\Chrome\User Data</code> 到资源管理器打开</li>
 			<li>In search bar, type <code>Bookmarks</code>, you will see a list of files named <code>Bookmarks</code> and/or <code>Bookmarks.bak</code>. (<i>Note: If there is more than one user using the same Chrome, bookmarks from other users will be listed too</i>)</li>
-			<li>Select all the files with mouse and drag them to the block below.</li>
-			<li>Download all the HTML files.</li>
-			<li>Open each HTML file with Chrome and determine the HTML file that contains your bookmarks. (<i>Note: The largest file is most likely the correct one</i>)</li>
-			<li>In your Chrome browser, click the Chrome menu icon and go to Bookmarks &gt; Bookmark Manager.</li>
-			<li>Click the menu icon beside search bar and click "Import Bookmarks".</li>
-			<li>Select the HTML file that contains your bookmarks.</li>
-			<li>Your bookmarks should now be imported back to Chrome.</li>
+			<li>选择所有文件并将它们拖到下面的输入框中。</li>
+			<li>下载所有的HTML文件。</li>
+			<li>使用 Chrome 打开每个 HTML 文件，并确定包含您的书签的 HTML 文件。（<i>注意：最大的文件很可能是正确的文件</i>) </li>
+			<li>在 Chrome 浏览器中，单击 Chrome 菜单图标，然后转到书签 > 书签管理器。</li>
+			<li>点击菜单图标，然后点击导入书签。</li>
+			<li>选择你需要的书签。</li>
+			<li>到此，你的书签应该已经恢复。</li>
 		</ol>
 	</div>
 	<div class="soln" id="mac-soln" role="tabpanel" aria-labelledby="mac-tab" aria-hidden="true" tabindex="0">
@@ -331,11 +331,11 @@ footer a {
 			</svg>
 			<label>
 				<input tabindex="0" type="file" multiple id="input" aria-describedby="tooltip"/>
-				<b>Choose a file</b> or drag it here
+				<b>点击导入Bookmarks</b> 或者将Bookmarks拖入此处
 			</label>
 			<div role="tooltip" id="tooltip">Search with the keyword of "Bookmarks" and select all the files found.</div>
 		</div>
-		<output id="output" role="alert" aria-live="assertive" aria-hidden="true">The HTML file will be produced here later.</output>
+		<output id="output" role="alert" aria-live="assertive" aria-hidden="true">稍后在此处下载转换后的HTML文件</output>
 	</form>
 	<h3>Other ways to recover bookmarks</h3>
 	<div class="zip">
