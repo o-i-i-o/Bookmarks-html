@@ -421,7 +421,7 @@ Bookmark.prototype.newLink = function() {
 		if ('disabled' in this.dataset) {
 			return false;
 		}
-		this.textContent = 'Downloaded';
+		this.textContent = '已下载';
 		this.dataset.disabled = true;
 		setTimeout(function() {
 			window.URL.revokeObjectURL(this.href);
@@ -439,7 +439,7 @@ function readFile(file) {
 			bookmark.parse();
 			li.appendChild(bookmark.newLink());
 		} catch(e) {
-			li.innerHTML += '<b>Error! The file is invalid. Try again!</b>';
+			li.innerHTML += '<b>文件无效，请重试。</b>';
 		}
 	};
 	reader.readAsText(file);
