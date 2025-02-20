@@ -416,7 +416,7 @@ Bookmark.prototype.newLink = function() {
 	var a = document.createElement('a');
 	a.download = 'bookmark_backup.html';
 	a.href = window.URL.createObjectURL(blob);
-	a.textContent = 'Download ready (' + this.count + ' bookmarks found)';
+	a.textContent = '点击下载 (' + this.count + ' 个书签)';
 	a.onclick = function(e) {
 		if ('disabled' in this.dataset) {
 			return false;
@@ -432,7 +432,7 @@ Bookmark.prototype.newLink = function() {
 function readFile(file) {
 	var reader = new FileReader();
 	var li = document.createElement('li');
-	li.innerHTML = '<strong>Last updated: ' + (file.lastModifiedDate !== undefined ? file.lastModifiedDate.toLocaleDateString() : 'n/a') + '</strong> (' + file.size + 'B) ';
+	li.innerHTML = '<strong>生成时间: ' + (file.lastModifiedDate !== undefined ? file.lastModifiedDate.toLocaleDateString() : 'n/a') + '</strong> (' + file.size + 'B) ';
 	reader.onloadend = function() {
 		try {
 			var bookmark = new Bookmark(reader.result);
